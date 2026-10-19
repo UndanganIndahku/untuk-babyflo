@@ -25,7 +25,7 @@ const CONFIG_DATA = {
   profilePhoto: "imel.jpeg",
 
   // Message Popup Inside Gift Box
-  specialMessage: `Happy birthday, Mel!🎂🦋✨\n\nSemoga di umur yang baru ini makin banyak hal baik yang datang, makin bahagia, makin sukses, dan semua yang lagi lu usahain bisa tercapai satu prsatu. Semoga selalu dikelilingi orang-orang baik juga.\n\nPokoknya jangan lupa bahagia, jangan kebanyakan overthinking wkwk. Nikmatin aja setiap prosesnya, karena masih banyak hal seru yang nunggu di depan. 😆\n\nSelamat ulang tahun yay, Semoga panjang umur, sehat selalu, dan semoga tahun ini jadi tahun yang lebih baik dari sebelumnya. 🎉✨`,
+  specialMessage: `Happy birthday, Mel!🎂🦋✨\n\nSemoga di umur yang baru ini makin banyak hal baik yang datang, makin bahagia, makin sukses, dan semua yang lagi lu usahain bisa tercapai satu prsatu. Semoga selalu dikelilingi orang-orang baik juga.\n\nPokoknya jangan lupa bahagia, jangan kebanyakan overthinking wkwk. Nikmatin aja setiap prosesnya, karena masih banyak hal seru yang nunggu di depan. 😆\n\nSelamat ulang tahun yak, Semoga panjang umur, sehat selalu, dan semoga tahun ini jadi tahun yang lebih baik dari sebelumnya. 🎉✨`,
 
   // Photo Gallery Array (3 Items)
   gallery: [
