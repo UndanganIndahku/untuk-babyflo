@@ -1,0 +1,160 @@
+/* ==========================================
+   CUSTOM AESTHETIC BUTTERFLY THEME STYLES
+   ========================================== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  color: #5a4b5c;
+}
+
+.font-aesthetic {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-cursive {
+  font-family: 'Sacramento', cursive;
+}
+
+/* Butterfly Pastel Gradient Background */
+.bg-butterfly-theme {
+  background: linear-gradient(180deg, #ffe5ec 0%, #f0e6ff 50%, #e8dff5 100%);
+}
+
+/* Floating Background Butterflies */
+.butterfly-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.butterfly {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 6px rgba(216, 180, 254, 0.8));
+  animation: floatButterfly 12s infinite ease-in-out;
+}
+
+@keyframes floatButterfly {
+  0% {
+    transform: translateY(105vh) translateX(0) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  10% { opacity: 0.9; }
+  50% {
+    transform: translateY(50vh) translateX(40px) rotate(15deg) scale(1.1);
+  }
+  90% { opacity: 0.9; }
+  100% {
+    transform: translateY(-10vh) translateX(-30px) rotate(-10deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Pulsing & Floating Profile Frame */
+.avatar-glow {
+  box-shadow: 0 0 25px 8px rgba(236, 178, 222, 0.6), 0 0 50px 15px rgba(192, 132, 252, 0.4);
+  animation: pulseGlow 4s infinite alternate, floatAvatar 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 15px 4px rgba(236, 178, 222, 0.5), 0 0 35px 8px rgba(192, 132, 252, 0.3); }
+  100% { box-shadow: 0 0 30px 12px rgba(244, 114, 182, 0.8), 0 0 60px 20px rgba(168, 85, 247, 0.6); }
+}
+
+@keyframes floatAvatar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Cake & Flame Styling */
+.cake-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.flame {
+  width: 22px;
+  height: 34px;
+  background: radial-gradient(ellipse at bottom, #ffea79 0%, #ff9800 50%, #f44336 100%);
+  border-radius: 50% 50% 35% 35%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #ff9800, 0 0 30px #ffeb3b;
+  animation: flicker 0.6s ease-in-out infinite alternate;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1) rotate(-2deg); opacity: 0.95; }
+  100% { transform: scale(1.15) rotate(2deg); opacity: 1; filter: drop-shadow(0 0 12px #ff9800); }
+}
+
+.flame.extinguished {
+  display: none;
+}
+
+.smoke {
+  width: 8px;
+  height: 20px;
+  background: rgba(200, 200, 200, 0.6);
+  border-radius: 10px;
+  margin: 0 auto;
+  animation: smokeRise 2s forwards ease-out;
+}
+
+@keyframes smokeRise {
+  0% { opacity: 0.8; transform: translateY(0) scaleX(1); }
+  100% { opacity: 0; transform: translateY(-30px) scaleX(3); }
+}
+
+/* Bouncy Gift Icon Animation */
+.bounce-gift {
+  animation: gentleBounce 2s infinite ease-in-out;
+}
+
+@keyframes gentleBounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(0deg); }
+  40% { transform: translateY(-15px) rotate(-5deg); }
+  60% { transform: translateY(-8px) rotate(5deg); }
+}
+
+/* Gentle Sway Animations for Polaroid Cards */
+.sway-card-1 { animation: gentleSway1 5s infinite ease-in-out alternate; }
+.sway-card-2 { animation: gentleSway2 6s infinite ease-in-out alternate; }
+.sway-card-3 { animation: gentleSway1 5.5s infinite ease-in-out alternate-reverse; }
+
+@keyframes gentleSway1 {
+  0% { transform: rotate(-3deg) translateY(0); }
+  100% { transform: rotate(3deg) translateY(-8px); }
+}
+
+@keyframes gentleSway2 {
+  0% { transform: rotate(2deg) translateY(0); }
+  100% { transform: rotate(-2deg) translateY(-10px); }
+}
+
+/* Modal Active State */
+.modal-active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: scale(1) !important;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
