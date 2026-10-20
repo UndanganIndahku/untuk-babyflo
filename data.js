@@ -30,17 +30,17 @@ const CONFIG_DATA = {
   // Photo Gallery Array (3 Items)
   gallery: [
     {
-      url: "imel1.jpeg",
+      url: "imel1.png",
       caption: "Senyuman 🌸",
       swayClass: "sway-card-1"
     },
     {
-      url: "imel2.jpeg",
+      url: "imel2.png",
       caption: "Bahagia ✨",
       swayClass: "sway-card-2"
     },
     {
-      url: "imel3.jpeg",
+      url: "imel3.png",
       caption: "Keceriaan 🦋",
       swayClass: "sway-card-3"
     }
